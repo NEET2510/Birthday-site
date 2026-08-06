@@ -1,4 +1,4 @@
-body {
+/* body {
     text-align: center;
     font-family: 'Happy Monkey', cursive;
     background: linear-gradient(#a2d2ff, #EFB0C9);
@@ -90,4 +90,155 @@ h1, h2, h3, h4, p {
 
 a {
     color: white;
+} */
+
+
+
+/* NEW ONE ADDED BY AI */
+
+
+/* --- GLOBAL RESPONSIVE SETTINGS --- */
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit; /* Forces all elements to calculate widths perfectly on mobile phones */
+}
+
+body {
+    text-align: center;
+    font-family: 'Happy Monkey', cursive;
+    background: linear-gradient(135deg, #0f172a, #1e1b4b, #2e1065, #3b0764);
+    background-attachment: fixed;
+    color: #ffffff;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px; /* Looks premium on desktops, scales down perfectly on mobile */
+    padding: 20px;
+    overflow-x: hidden; /* Prevents any ugly side-scrolling on tiny phones */
+}
+
+h1, h2, h3, h4, p {
+    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    word-wrap: break-word; /* Stops long words from breaking screen edges */
+}
+
+/* --- HEADER SECTION --- */
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#header h1 {
+    font-size: 2.2rem; /* Scaled down slightly so it fits mobile screens without wrapping poorly */
+    background: linear-gradient(45deg, #fff, #c7d2fe, #f472b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+#bff-img {
+    width: 150px;
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.9);
+    margin-bottom: 15px;
+    box-shadow: 0 0 25px rgba(199, 210, 252, 0.3);
+}
+
+#bday-age, #bday-date {
+    background: rgba(255, 255, 255, 0.08); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 6px 16px;
+    border-radius: 50px;
+    margin: 6px 0;
+    display: inline-block;
+    font-size: 1rem;
+    backdrop-filter: blur(4px);
+}
+
+#bday-age { color: #f472b6; border-color: rgba(244, 114, 182, 0.3); }
+#bday-date { color: #38bdf8; border-color: rgba(56, 189, 248, 0.3); }
+
+/* --- RESPONSIVE GIFT SECTIONS --- */
+.gift-section {
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px 15px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+}
+
+.gift-title {
+    font-size: 1.4rem;
+    color: #e2e8f0;
+    margin-bottom: 5px;
+}
+
+.gift-hint {
+    font-weight: normal;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin-top: 0;
+}
+
+.gift-img {
+    margin: 20px auto 0; 
+    width: 100%; /* Spans the full width of the card container on phones */
+    max-width: 360px; /* Stops it from growing too massive on laptops */
+    aspect-ratio: 1 / 1; /* Keeps it a perfect square box dynamically on all devices */
+    border: 5px solid rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    background-image: url("images/gift-cover.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.gift-img:hover {
+    transform: scale(1.02) translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    border-color: #ffffff;
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #0b0f19;
+}
+
+/* --- CLEAN LOCAL URL PATHS --- */
+#gift-img-happy:hover { background-image: url("images/happy.gif"); }
+#gift-img-hot:hover { background-image: url("images/hot.gif"); }
+#gift-img-genius:hover { background-image: url("images/genius.gif"); }
+#gift-img-badass:hover { background-image: url("images/badass.gif"); }
+#gift-img-cheers:hover { background-image: url("images/cheers.gif"); }
+
+/* --- FOOTER SECTION --- */
+#footer {
+    font-style: italic;
+    width: 100%;
+    margin: 50px auto 10px;
+    padding: 20px 15px;
+    background: rgba(15, 23, 42, 0.6);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+a {
+    color: #f472b6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
 }
